@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  const greetingEl = document.getElementById('dynamicGreeting');
+  if (greetingEl) {
+    const hour = new Date().getHours();
+    let greeting = 'Good Evening';
+    if (hour < 12) greeting = 'Good Morning';
+    else if (hour < 18) greeting = 'Good Afternoon';
+    greetingEl.textContent = greeting + ', welcome to CloudSphere.';
+  }
+
   const liveClock = document.getElementById('liveClock');
   const liveDate = document.getElementById('liveDate');
 
@@ -135,6 +144,21 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.parentElement;
+      const isActive = item.classList.contains('active');
+
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        faq.classList.remove('active');
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
       }
     });
   });

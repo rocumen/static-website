@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,19 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <header class="site-header">
     <div class="container nav-container">
       <div class="logo">
-        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
         </svg>
         <span>Cloud<strong>Sphere</strong></span>
       </div>
@@ -26,6 +31,7 @@
           <li><a href="#models">Services</a></li>
           <li><a href="#benefits">Benefits</a></li>
           <li><a href="#live-tools">Live Tools</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
 
@@ -37,10 +43,11 @@
 
     <section id="overview" class="hero-section">
       <div class="container">
-        <span class="badge">Cloud Computing Learning Portal</span>
+
         <h1>Empowering the Future with <span class="highlight">Cloud Computing</span></h1>
         <p class="hero-description">
-          Cloud computing delivers computing services—servers, storage, databases, networking, and software—over the Internet to offer faster innovation and flexible resources.
+          Cloud computing delivers computing services—servers, storage, databases, networking, and software—over the
+          Internet to offer faster innovation and flexible resources.
         </p>
         <div class="hero-buttons">
           <a href="#live-tools" class="btn btn-primary">Try Live Tools</a>
@@ -197,11 +204,70 @@
                 <span id="toggleText">Show Quick Note</span>
               </button>
               <div id="collapsibleContent" class="collapsible-content">
-                <p><em>Pro Tip:</em> The AWS Well-Architected Framework emphasizes 5 pillars: Operational Excellence, Security, Reliability, Performance Efficiency, and Cost Optimization.</p>
+                <p><em>Pro Tip:</em> The AWS Well-Architected Framework emphasizes 5 pillars: Operational Excellence,
+                  Security, Reliability, Performance Efficiency, and Cost Optimization.</p>
               </div>
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="content-section alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="sub-heading">Questions</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about cloud computing answered.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">What is cloud computing?</button>
+            <div class="faq-answer">
+              <p>Cloud computing is the delivery of computing services like servers, storage, databases, networking,
+                software, and analytics over the Internet. Instead of owning and maintaining physical servers, you rent
+                access to these resources from a cloud provider on a pay-as-you-go basis.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What is the difference between IaaS, PaaS, and SaaS?</button>
+            <div class="faq-answer">
+              <p>IaaS provides raw infrastructure (virtual machines, storage). PaaS provides a platform for developers
+                to build apps without managing servers. SaaS delivers fully built software applications that users
+                access through a browser. Each layer abstracts more of the underlying infrastructure.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Is cloud computing secure?</button>
+            <div class="faq-answer">
+              <p>Major cloud providers invest heavily in security, including encryption, access controls, compliance
+                certifications, and physical data center security. However, security is a shared responsibility. The
+                provider secures the infrastructure, but users must secure their own data, access policies, and
+                applications.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What are the main cloud providers?</button>
+            <div class="faq-answer">
+              <p>The three largest cloud providers are Amazon Web Services (AWS), Microsoft Azure, and Google Cloud
+                Platform (GCP). Each offers a wide range of services including compute, storage, databases, machine
+                learning, and networking tools.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How does cloud computing save costs?</button>
+            <div class="faq-answer">
+              <p>Cloud computing eliminates the upfront cost of purchasing hardware and the ongoing expense of
+                maintaining data centers. You only pay for the resources you actually use, and you can scale up or down
+                as needed, avoiding waste from over-provisioning.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -217,4 +283,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
