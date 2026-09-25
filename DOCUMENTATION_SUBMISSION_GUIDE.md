@@ -41,7 +41,7 @@ Prepare the following 9 screenshots and paste them under the **Screenshots** sec
 | **6** | **GitHub Pages published website** | Open [https://rocumen.github.io/static-website/](https://rocumen.github.io/static-website/) in your browser. Ensure the browser address bar is clearly visible showing the URL. |
 | **7** | **Working live clock** | Scroll to the **Live Tools** section on the live website and take a close screenshot of the digital clock displaying the current live time and date. |
 | **8** | **Working countdown timer** | Take a screenshot of the **Event Countdown Timer** showing the dynamically decreasing Days, Hours, Minutes, and Seconds. |
-| **9** | **Working interactive JavaScript feature** | Click the **"✨ Generate Cloud Fact"** button or **"Helpful"** counter or **Dark/Light Mode** toggle (🌙/☀️) and take a screenshot showing the updated content on the webpage. |
+| **9** | **Working interactive JavaScript feature** | Click the **"Generate Cloud Fact"** button or **"Helpful"** counter or **Dark/Light Mode** toggle and take a screenshot showing the updated content on the webpage. |
 
 ---
 

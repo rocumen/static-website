@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CloudSphere | Cloud Computing Essentials & Learning Hub</title>
+  <title>CloudSphere | Cloud Computing Essentials</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts for clean typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header & Navigation Menu -->
+
   <header class="site-header">
     <div class="container nav-container">
       <div class="logo">
@@ -21,232 +20,140 @@
         <span>Cloud<strong>Sphere</strong></span>
       </div>
 
-      <nav class="main-nav" aria-label="Main Navigation">
+      <nav>
         <ul class="nav-links">
-          <li><a href="#overview" class="nav-link">Overview</a></li>
-          <li><a href="#models" class="nav-link">Service Models</a></li>
-          <li><a href="#deployments" class="nav-link">Deployments</a></li>
-          <li><a href="#benefits" class="nav-link">Key Benefits</a></li>
-          <li><a href="#live-tools" class="nav-link highlight-link">Live Tools</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#models">Services</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#live-tools">Live Tools</a></li>
         </ul>
       </nav>
 
-      <div class="header-actions">
-        <!-- Interactive Theme Toggle Button -->
-        <button id="themeToggleBtn" class="btn btn-icon" title="Toggle Dark/Light Mode" aria-label="Toggle Dark/Light Mode">
-          <span class="theme-icon">🌙</span>
-        </button>
-      </div>
+      <button id="themeToggleBtn" class="btn-theme" title="Toggle Dark or Light Mode">Dark Mode</button>
     </div>
   </header>
 
-  <!-- Main Content Area -->
   <main>
-    <!-- Hero / Overview Section -->
-    <section id="overview" class="hero-section">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="badge">🌐 Cloud Computing Learning Portal</div>
-          <h1 class="hero-title">Empowering the Future with <span>Cloud Computing</span></h1>
-          <p class="hero-description">
-            Cloud computing delivers computing services—including servers, storage, databases, networking, software, and intelligence—over the Internet to offer faster innovation, flexible resources, and economies of scale.
-          </p>
-          <div class="hero-buttons">
-            <a href="#live-tools" class="btn btn-primary">Try Live Tools</a>
-            <a href="#models" class="btn btn-outline">Explore Architectures</a>
-          </div>
-        </div>
 
-        <div class="hero-visual">
-          <div class="cloud-card-illustration">
-            <div class="illustration-graphic">
-              <!-- Inline Cloud Architecture Graphic -->
-              <svg viewBox="0 0 280 200" class="graphic-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="20" y="20" width="240" height="160" rx="16" fill="var(--card-bg)" stroke="var(--border-color)" stroke-width="2"/>
-                <path d="M190 120H95a35 35 0 0 1-4.8-69.7A45 45 0 0 1 178 68a30 30 0 0 1 12 52Z" fill="var(--primary-light)" stroke="var(--primary-color)" stroke-width="3"/>
-                <circle cx="110" cy="95" r="5" fill="var(--primary-color)"/>
-                <circle cx="140" cy="85" r="5" fill="var(--accent-color)"/>
-                <circle cx="170" cy="100" r="5" fill="var(--primary-color)"/>
-                <path d="M110 95 L140 85 L170 100" stroke="var(--accent-color)" stroke-width="2" stroke-dasharray="4 4"/>
-              </svg>
-            </div>
-            <div class="card-caption">
-              <h4>Modern Distributed Cloud Architecture</h4>
-              <p>Scalable, fault-tolerant, and globally distributed infrastructure.</p>
-            </div>
-          </div>
+    <section id="overview" class="hero-section">
+      <div class="container">
+        <span class="badge">Cloud Computing Learning Portal</span>
+        <h1>Empowering the Future with <span class="highlight">Cloud Computing</span></h1>
+        <p class="hero-description">
+          Cloud computing delivers computing services—servers, storage, databases, networking, and software—over the Internet to offer faster innovation and flexible resources.
+        </p>
+        <div class="hero-buttons">
+          <a href="#live-tools" class="btn btn-primary">Try Live Tools</a>
+          <a href="#models" class="btn btn-outline">Explore Services</a>
         </div>
       </div>
     </section>
 
-    <!-- Content Section 1: Cloud Service Models -->
     <section id="models" class="content-section">
       <div class="container">
         <div class="section-header">
           <span class="sub-heading">Classification</span>
           <h2>Cloud Service Models</h2>
-          <p>The three fundamental building blocks of modern cloud computing architectures.</p>
+          <p>The three building blocks of cloud computing.</p>
         </div>
 
         <div class="cards-grid">
-          <!-- Card 1: IaaS -->
-          <article class="feature-card">
-            <div class="card-icon blue-accent">🖥️</div>
-            <h3>IaaS (Infrastructure as a Service)</h3>
-            <p>Provides fundamental computing resources like virtual machines, storage, and networking on demand with complete control.</p>
+          <div class="feature-card">
+            <div class="card-icon blue-accent">01</div>
+            <h3>IaaS</h3>
+            <p>Infrastructure as a Service — virtual machines, storage, and networking on demand.</p>
             <ul class="feature-list">
-              <li>High-level control of IT resources</li>
-              <li>Pay-as-you-go infrastructure</li>
-              <li>Examples: AWS EC2, Google Compute Engine, Azure VMs</li>
+              <li>Full control of IT resources</li>
+              <li>Pay-as-you-go pricing</li>
+              <li>Examples: AWS EC2, Google Compute Engine</li>
             </ul>
-          </article>
-
-          <!-- Card 2: PaaS -->
-          <article class="feature-card">
-            <div class="card-icon purple-accent">⚙️</div>
-            <h3>PaaS (Platform as a Service)</h3>
-            <p>Delivers hardware and software tools needed for application development without managing the underlying hardware.</p>
-            <ul class="feature-list">
-              <li>Streamlined development cycles</li>
-              <li>Automated OS management & patching</li>
-              <li>Examples: Google App Engine, AWS Elastic Beanstalk, Heroku</li>
-            </ul>
-          </article>
-
-          <!-- Card 3: SaaS -->
-          <article class="feature-card">
-            <div class="card-icon green-accent">📦</div>
-            <h3>SaaS (Software as a Service)</h3>
-            <p>Delivers end-user applications over the Internet managed entirely by the software vendor, accessible via web browsers.</p>
-            <ul class="feature-list">
-              <li>Zero maintenance overhead</li>
-              <li>Accessible anywhere on any device</li>
-              <li>Examples: Google Workspace, Microsoft 365, Dropbox</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Content Section 2: Deployment Models & Providers -->
-    <section id="deployments" class="content-section alt-bg">
-      <div class="container">
-        <div class="section-header">
-          <span class="sub-heading">Infrastructure</span>
-          <h2>Deployment Models & Major Cloud Providers</h2>
-          <p>How cloud environments are isolated, secured, and hosted across the globe.</p>
-        </div>
-
-        <div class="split-layout">
-          <div class="deployment-types">
-            <h3>Cloud Deployment Strategies</h3>
-            <ol class="styled-list">
-              <li>
-                <strong>Public Cloud:</strong> Owned and operated by third-party cloud providers, delivering computing resources over the public Internet.
-              </li>
-              <li>
-                <strong>Private Cloud:</strong> Infrastructure used exclusively by a single business or organization, physically located on-premises or hosted by a third party.
-              </li>
-              <li>
-                <strong>Hybrid Cloud:</strong> Combines public and private clouds, bound together by technology that allows data and applications to be shared.
-              </li>
-              <li>
-                <strong>Multi-Cloud:</strong> The usage of two or more cloud computing services from different vendors to avoid vendor lock-in.
-              </li>
-            </ol>
           </div>
 
-          <div class="providers-box">
-            <h3>Leading Cloud Platforms</h3>
-            <p>Explore official documentation and developer resources:</p>
-            <div class="provider-links">
-              <!-- External Hyperlinks -->
-              <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer" class="provider-card">
-                <span class="provider-name">Google Cloud Platform (GCP)</span>
-                <span class="provider-arrow">↗</span>
-              </a>
-              <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" class="provider-card">
-                <span class="provider-name">Amazon Web Services (AWS)</span>
-                <span class="provider-arrow">↗</span>
-              </a>
-              <a href="https://azure.microsoft.com" target="_blank" rel="noopener noreferrer" class="provider-card">
-                <span class="provider-name">Microsoft Azure</span>
-                <span class="provider-arrow">↗</span>
-              </a>
-            </div>
+          <div class="feature-card">
+            <div class="card-icon purple-accent">02</div>
+            <h3>PaaS</h3>
+            <p>Platform as a Service — tools for app development without managing hardware.</p>
+            <ul class="feature-list">
+              <li>Faster development cycles</li>
+              <li>Automated OS management</li>
+              <li>Examples: Google App Engine, Heroku</li>
+            </ul>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-icon green-accent">03</div>
+            <h3>SaaS</h3>
+            <p>Software as a Service — ready-to-use apps delivered over the Internet.</p>
+            <ul class="feature-list">
+              <li>No maintenance needed</li>
+              <li>Accessible on any device</li>
+              <li>Examples: Google Workspace, Microsoft 365</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Content Section 3: Benefits -->
-    <section id="benefits" class="content-section">
+    <section id="benefits" class="content-section alt-bg">
       <div class="container">
         <div class="section-header">
           <span class="sub-heading">Advantages</span>
           <h2>Why Cloud Computing Matters</h2>
-          <p>Key business and technical drivers transforming contemporary computing.</p>
+          <p>Key reasons businesses are moving to the cloud.</p>
         </div>
 
         <div class="benefits-grid">
           <div class="benefit-item">
             <span class="benefit-badge">01</span>
             <h4>Cost Efficiency</h4>
-            <p>Eliminates capital expenses of buying hardware and software, running on-site data centers, and round-the-clock electricity.</p>
+            <p>No need to buy hardware or run on-site data centers.</p>
           </div>
           <div class="benefit-item">
             <span class="benefit-badge">02</span>
-            <h4>Global Elasticity & Scaling</h4>
-            <p>Allows elastic scaling of computing power, storage, and bandwidth right when it's needed from anywhere in the world.</p>
+            <h4>Scalability</h4>
+            <p>Scale computing power up or down based on your needs.</p>
           </div>
           <div class="benefit-item">
             <span class="benefit-badge">03</span>
-            <h4>Performance & Speed</h4>
-            <p>Runs on worldwide networks of secure data centers regularly upgraded to the latest generation of fast, efficient computing hardware.</p>
+            <h4>Performance</h4>
+            <p>Runs on fast, regularly upgraded data center hardware worldwide.</p>
           </div>
           <div class="benefit-item">
             <span class="benefit-badge">04</span>
-            <h4>High Reliability & Redundancy</h4>
-            <p>Data backup, disaster recovery, and business continuity are made easier and less expensive with multiple mirrored sites.</p>
+            <h4>Reliability</h4>
+            <p>Data backup and disaster recovery made easier with mirrored sites.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Section 4: Live JavaScript Tools (Required JS Features) -->
-    <section id="live-tools" class="content-section tools-section">
+    <section id="live-tools" class="content-section">
       <div class="container">
         <div class="section-header">
-          <span class="sub-heading">Interactive Components</span>
+          <span class="sub-heading">Interactive</span>
           <h2>Live JavaScript Features</h2>
-          <p>Real-time clocks, dynamic timers, and interactive controls fulfilling the activity specifications.</p>
+          <p>Real-time clock, countdown timer, and interactive controls.</p>
         </div>
 
         <div class="tools-grid">
-          <!-- JS Feature 1: Live Digital Clock -->
-          <div class="tool-card clock-card">
-            <div class="tool-header">
-              <span class="tool-tag">Feature 1</span>
-              <h3>Live Digital Clock</h3>
-            </div>
-            <p class="tool-sub">Real-time local clock dynamically updating every second.</p>
+
+          <div class="tool-card">
+            <span class="tool-tag">Feature 1</span>
+            <h3>Live Digital Clock</h3>
+            <p class="tool-sub">Updates every second in real time.</p>
             <div class="clock-display">
               <div id="liveClock" class="digital-time">--:--:-- --</div>
               <div id="liveDate" class="digital-date">Loading date...</div>
             </div>
             <div class="tool-status">
-              <span class="status-indicator active"></span> Updates automatically in real-time
+              <span class="status-dot"></span> Live — updates automatically
             </div>
           </div>
 
-          <!-- JS Feature 2: Event Countdown Timer -->
-          <div class="tool-card countdown-card">
-            <div class="tool-header">
-              <span class="tool-tag">Feature 2</span>
-              <h3>Event Countdown Timer</h3>
-            </div>
-            <p class="tool-sub">Live countdown to the <strong>Cloud Computing Project Showcase</strong>:</p>
-            
+          <div class="tool-card">
+            <span class="tool-tag">Feature 2</span>
+            <h3>Event Countdown Timer</h3>
+            <p class="tool-sub">Countdown to the <strong>Cloud Computing Final Submission</strong>:</p>
             <div class="countdown-display" id="countdownContainer">
               <div class="countdown-unit">
                 <span id="daysVal" class="countdown-number">00</span>
@@ -268,79 +175,46 @@
                 <span class="countdown-label">Seconds</span>
               </div>
             </div>
-
-            <div id="countdownEventLabel" class="event-badge">
-              Target Event: Cloud Computing Final Term Submission
-            </div>
+            <div class="event-badge">Target: Cloud Computing Final Term Submission</div>
           </div>
 
-          <!-- JS Feature 3: Interactive Button & Features -->
-          <div class="tool-card interactive-card">
-            <div class="tool-header">
-              <span class="tool-tag">Feature 3</span>
-              <h3>Interactive Cloud Generator</h3>
-            </div>
-            <p class="tool-sub">Click the buttons below to trigger dynamic DOM updates.</p>
+          <div class="tool-card">
+            <span class="tool-tag">Feature 3</span>
+            <h3>Interactive Cloud Generator</h3>
+            <p class="tool-sub">Click buttons to see dynamic content updates.</p>
 
             <div class="tip-box" id="tipBox">
-              <p id="tipText">💡 Click the button below to generate an insightful Cloud Computing tip or architectural best practice!</p>
+              <p id="tipText">Click the button below to generate a Cloud Computing tip.</p>
             </div>
 
-            <div class="button-action-row">
-              <button id="generateTipBtn" class="btn btn-primary">
-                ✨ Generate Cloud Fact
-              </button>
-              <button id="likeCounterBtn" class="btn btn-outline">
-                👍 Helpful (<span id="likeCount">0</span>)
-              </button>
+            <div class="button-row">
+              <button id="generateTipBtn" class="btn btn-primary">Generate Cloud Fact</button>
+              <button id="likeCounterBtn" class="btn btn-outline">Helpful (<span id="likeCount">0</span>)</button>
             </div>
 
-            <div class="additional-actions">
+            <div class="toggle-section">
               <button id="toggleInfoBtn" class="btn-text">
-                ▶ <span id="toggleText">Show Architecture Quick Note</span>
+                <span id="toggleText">Show Quick Note</span>
               </button>
               <div id="collapsibleContent" class="collapsible-content">
-                <p><em>Pro Tip:</em> The AWS Well-Architected Framework and Google Cloud Architecture Framework emphasize 5 foundational pillars: Operational Excellence, Security, Reliability, Performance Efficiency, and Cost Optimization.</p>
+                <p><em>Pro Tip:</em> The AWS Well-Architected Framework emphasizes 5 pillars: Operational Excellence, Security, Reliability, Performance Efficiency, and Cost Optimization.</p>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-container">
-      <div class="footer-info">
-        <div class="footer-logo">
-          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
-          </svg>
-          <span>CloudSphere</span>
-        </div>
-        <p>Published with GitHub Pages for the Cloud Computing Laboratory Activity.</p>
-      </div>
-
-      <div class="footer-links">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#models">Service Models</a></li>
-          <li><a href="#deployments">Deployments</a></li>
-          <li><a href="#live-tools">Live Tools</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-meta">
-        <h4>Activity Submission</h4>
-        <p>Designed with standard HTML5, CSS3, & Modern Vanilla JavaScript.</p>
-        <p class="copyright">&copy; 2026 Cloud Computing Activity. All rights reserved.</p>
-      </div>
+    <div class="container">
+      <p><strong>CloudSphere</strong> — Cloud Computing Activity | Published with GitHub Pages</p>
+      <p class="copyright">&copy; 2026 Cloud Computing Activity. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Script Connection -->
   <script src="script.js"></script>
 </body>
 </html>
