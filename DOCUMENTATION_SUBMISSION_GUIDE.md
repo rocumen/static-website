@@ -20,8 +20,8 @@
 ---
 
 ## 2. Website Information
-- **Website Title:** CloudSphere | Cloud Computing Essentials & Learning Hub
-- **Purpose:** To provide a comprehensive, interactive, and responsive educational hub that presents fundamental cloud computing concepts—including Cloud Service Models (IaaS, PaaS, SaaS), Deployment Architectures (Public, Private, Hybrid, Multi-Cloud), and industry advantages—reinforced by live dynamic JavaScript tools such as a real-time digital clock, a milestone countdown timer, and interactive controls.
+- **Website Title:** CloudSphere | Cloud Computing Essentials
+- **Purpose:** To provide an interactive and responsive educational website that presents fundamental cloud computing concepts—including Cloud Service Models (IaaS, PaaS, SaaS) and key industry advantages—reinforced by live JavaScript tools such as a real-time digital clock, a countdown timer, and interactive controls.
 - **Target Audience:** Information Technology and Computer Science students, software engineers, cloud practitioners, and tech enthusiasts.
 - **GitHub Repository:** `https://github.com/rocumen/static-website`
 - **Published Website URL:** `https://rocumen.github.io/static-website/`
